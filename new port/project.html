@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+
+        .projects {
+            padding: 20px;
+            background-color: #222;
+
+        }
+
+        .projects h2 {
+            margin-bottom: 10px;
+        }
+
+        .project-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap:wrap;
+        }
+
+        .project {
+            max-width: 300px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+
+        img {
+
+            width: 100%;
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        h3,
+        h2 {
+            color: #007ced;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-s"></i>
+            <div class="logotext">SunilPatel</div>
+        </div>
+        <nav>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks">
+                <li><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li><a href="about.html" class="text-decoration-none">About</a></li>
+                <li><a href="sunil.pdf" class="text-decoration-none">Resume</a></li>
+                <li><a href="project.html" class="text-decoration-none">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Calculator</h3>
+                <a href="calculator.html"><img src="cal.jpg" alt="img"></a>
+                <p>A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do
+                    only addition, subtraction, multiplication and division mathematical calculations.</p>
+            </div>
+            <div class="project">
+                <h3>Chessboard</h3>
+                <a href="chessboard.html"><img src="chess.jpg" alt="img"></a>
+                <p>It consists of 64 squares, 8 rows by 8 columns, on which the chess pieces are placed. It is square in shape and uses two colours of squares, one light and one dark, in a chequered pattern.</p>
+            </div>
+            <div class="project">
+                <h3>Surveyform</h3>
+                <a href="surveyform.html"><img src="survey.jpg" alt="img"></a>
+                <p>A survey introduction is a concise description with relevant information about a survey. where collect relevent information by customers and others.</p>
+            </div>
+            <div class="project">
+                <h3>Facebook login page</h3>
+                <a href="facbook.html"><img src="fb.jpg" alt="img"></a>
+                <p>Email: You can log in with any email that's listed on your Facebook account. Phone number: If you have a mobile number confirmed on your account,username.</p>
+            </div>
+
+            <!-- Add more project divs as needed -->
+        </div>
+    </div>
+
+</body>
+
+</html>

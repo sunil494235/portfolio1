@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNIL calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("https://thumbs.dreamstime.com/b/wild-flowers-plant-summer-autumn-nature-background-banner-website-55976971.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calc {
+            background-color: rgb(200, 200, 200);
+            padding: 10px;
+            display: inline-block;
+            border-radius: 13px;
+        }
+
+        #output {
+            width: 320px;
+            padding: 10px;
+        }
+
+        input {
+            font-size: 30px;
+            width: 70px;
+            height: 60px;
+            margin: 5px;
+            border-radius: 10px;
+            border: groove white;
+            background: rgb(131, 173, 93);
+        }
+
+        input:hover {
+            background-color: rgb(216, 225, 154);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" text-align="center">
+        <h1>MAKER SUNIL</h1>
+        <form name="forms">
+            <div class="calc">
+                <input type="text" name="screen" id="output" placeholder="type for calc..." readonly> <br><br>
+                <input type="button" value="1" class="in">
+                <input type="button" value="2" class="in">
+                <input type="button" value="3" class="in">
+                <input type="button" value="AC" onclick="clearall()">
+                <br>
+                <input type="button" value="4" class="in">
+                <input type="button" value="5" class="in">
+                <input type="button" value="6" class="in">
+                <input type="button" value="+" class="in">
+                <br>
+                <input type="button" value="7" class="in">
+                <input type="button" value="8" class="in">
+                <input type="button" value="9" class="in">
+                <input type="button" value="-" class="in">
+                <br>
+                <input type="button" value="." class="in">
+                <input type="button" value="0" class="in">
+                <input type="button" value="=" onclick="solve()">
+                <input type="button" value="*" class="in">
+                <br>
+                <input type="button" value="(" class="in">
+                <input type="button" value=")" class="in">
+                <input type="button" value="%" class="in">
+                <input type="button" value="/" class="in">
+            </div>
+        </form>
+    </div>
+    <script>
+        let eq = document.getElementById('output');
+        let inputs = document.querySelectorAll('input.in');
+        console.log(inputs.length);
+        inputs.forEach(x => {
+            x.addEventListener('click', () => {
+                eq.value += x.value;
+            })
+        });
+        function clearall() {
+            eq.value = "";
+        }
+        function solve() {
+            eq.value = eval(eq.value);
+        }
+
+    </script>
+</body>
+
+</html>
